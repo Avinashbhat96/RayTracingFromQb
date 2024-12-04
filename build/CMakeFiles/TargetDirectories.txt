@@ -1,0 +1,3 @@
+/home/avinash/Projects/ray-tracing/build/CMakeFiles/edit_cache.dir
+/home/avinash/Projects/ray-tracing/build/CMakeFiles/rebuild_cache.dir
+/home/avinash/Projects/ray-tracing/build/CMakeFiles/RayTracingAlgo.dir

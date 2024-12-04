@@ -1,0 +1,16 @@
+{
+    "name": "Ray Tracing with SDL2",
+    "build": {
+      "dockerfile": "Dockerfile",
+      "context": ".."
+    },
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-vscode.cpptools",
+                "ms-vscode.cmake-tools"
+            ]
+        }
+    }
+    // "postCreateCommand": "apt-get update && apt-get install -y cmake"
+  }
