@@ -58,7 +58,7 @@ namespace RT
             return m_aspectratio;
         }
 
-        Ray GenerateRay(float proScreenX, float proScreenY);
+        bool GenerateRay(float proScreenX, float proScreenY, RT::Ray &cameraRay);
 
         void UpdateCameraGeometry();
 

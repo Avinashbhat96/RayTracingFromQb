@@ -32,10 +32,14 @@ void RT::Camera::UpdateCameraGeometry()
     m_projectionscreen_v = m_projectionscreen_v * (m_horsize / m_aspectratio);
 }
 
-RT::Ray RT::Camera::GenerateRay(float proScreenX, float proScreenY){
+bool RT::Camera::GenerateRay(float proScreenX, float proScreenY, RT::Ray &cameraRay){
     qbVector<double> screen_world_part1 = m_projectionscreen_centre + (m_projectionscreen_u * proScreenX);
     qbVector<double> screen_world_coord = screen_world_part1 + (m_projectionscreen_v * proScreenY);
 
-    return RT::Ray(m_position, screen_world_coord);
+    cameraRay.m_point1 = m_position;
+    cameraRay.m_point2 = screen_world_coord;
+    cameraRay.m_lab = screen_world_coord - m_position;
+
+    return true;
     
 }

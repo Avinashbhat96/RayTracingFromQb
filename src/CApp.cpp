@@ -17,6 +17,15 @@ bool CAPP::OnInit(){
 
         m_image.Initialize(1200,720, pRenderer);
 
+        SDL_SetRenderDrawColor(pRenderer, 255, 255, 255, 255);
+        SDL_RenderClear(pRenderer);
+
+        m_scene.Render(m_image);
+
+        m_image.Display();
+
+        SDL_RenderPresent(pRenderer);
+
     }
     else{
         return false;
@@ -54,14 +63,14 @@ void CAPP::OnLoop(){
 }
 
 void CAPP::OnRender(){
-    SDL_SetRenderDrawColor(pRenderer, 255, 255, 255, 255);
-    SDL_RenderClear(pRenderer);
+    // SDL_SetRenderDrawColor(pRenderer, 255, 255, 255, 255);
+    // SDL_RenderClear(pRenderer);
 
-    m_scene.Render(m_image);
+    // m_scene.Render(m_image);
 
-    m_image.Display();
+    // m_image.Display();
 
-    SDL_RenderPresent(pRenderer);
+    // SDL_RenderPresent(pRenderer);
 }
 
 void CAPP::OnExit(){

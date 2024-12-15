@@ -1,1 +1,0 @@
-/usr/bin/c++     CMakeFiles/RayTracingAlgo.dir/src/main.cpp.o CMakeFiles/RayTracingAlgo.dir/src/CApp.cpp.o CMakeFiles/RayTracingAlgo.dir/src/Ray.cpp.o CMakeFiles/RayTracingAlgo.dir/src/Camera.cpp.o CMakeFiles/RayTracingAlgo.dir/src/Scene.cpp.o CMakeFiles/RayTracingAlgo.dir/src/Image.cpp.o  -o RayTracingAlgo  -lSDL2 

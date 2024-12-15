@@ -15,11 +15,16 @@ find_package(SDL2 REQUIRED PATHS /usr/lib/x86_64-linux-gnu/cmake/SDL2 NO_DEFAULT
 
 set(SOURCES 
     src/main.cpp
-    src/CApp.cpp
+    src/ObjectBase.cpp
+    src/ObjSphere.cpp
     src/Ray.cpp
     src/Camera.cpp
+    src/LightBase.cpp
+    src/PointLight.cpp
     src/Scene.cpp
     src/Image.cpp
+    src/CApp.cpp
+
 )
 
 add_executable(${PROJECT_NAME} ${SOURCES})
